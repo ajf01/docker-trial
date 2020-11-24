@@ -28,6 +28,9 @@ RUN pip install --no-cache-dir networkx scipy python-louvain
 RUN pip install geopandas
 RUN pip install babypandas
 
+RUN pip install torch
+RUN pip install tensorflow
+
 # 4) change back to notebook user
 COPY /run_jupyter.sh /
 RUN chmod 755 /run_jupyter.sh
